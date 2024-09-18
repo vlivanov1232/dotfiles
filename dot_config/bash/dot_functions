@@ -1,0 +1,4 @@
+# Make directory and cd into it
+mcd() {
+     mkdir -p -- "$1" && cd -P -- "$1"
+}

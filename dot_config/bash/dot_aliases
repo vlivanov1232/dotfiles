@@ -1,0 +1,37 @@
+alias ll='eza -lh --no-permissions --no-user'
+alias lt='eza -Tlh --no-permissions --no-user --level=3'
+alias lgg='eza -Tlh --no-permissions --no-user --level=3 --git --git-ignore'
+alias la='eza -alh --no-permissions --no-user'
+alias ls='eza'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+alias h='history'
+alias rm='rm -I'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias so='so --no-lucky'
+alias jqs='jq "leaf_paths | join(\".\")"'
+alias jqsa='jq "paths(scalars) | map(tostring) | join(\".\")"'
+
+alias hpal='git push heroku HEAD:main && heroku logs --tail'
+alias hi='heroku info'
+alias hc='heroku create'
+alias hg='heroku git:remote'
+alias hsw1='heroku ps:scale web=1'
+alias hsw0='heroku ps:scale web=0'
+
+alias lg='lazygit'
+
+alias v='nvim .'
+alias vv='nvim'
+alias vd='NVIM_APPNAME=nvim_dev nvim'
+alias vdc='nvim ~/.config/nvim_dev/init.lua'
+
+
+eval $(thefuck --alias fk)
