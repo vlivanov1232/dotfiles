@@ -14,3 +14,9 @@ keymap.set("n", "<M-j>", ":m+1<CR>")
 keymap.set("n", "<M-k>", ":m-2<CR>")
 
 keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+keymap.set("n", "P", '"*p')
+keymap.set("n", "Y", '"*y')
+
+keymap.set("v", "P", '"*p')
+keymap.set("v", "Y", '"*y')
