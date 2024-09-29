@@ -15,20 +15,12 @@ return {
   opts = {
     ---@type lspconfig.options
     servers = {
-      --tsserver = {},
-      basedpyright = { settings = { python = { analysis = { typeCheckingMode = "standard" } } } },
+      basedpyright = { settings = { basedpyright = { analysis = { typeCheckingMode = "standard" } } } },
       perlpls = {},
       vtsls = {},
     },
 
-    -- you can do any additional lsp server setup here
-    -- return true if you don't want this server to be setup with lspconfig
     ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
-    setup = {
-      -- tsserver = function(_, opts)
-      --   require("typescript").setup({ server = opts })
-      --   return true
-      -- end,
-    },
+    setup = {},
   },
 }
