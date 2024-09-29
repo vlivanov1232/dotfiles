@@ -35,3 +35,5 @@ alias vdc='nvim ~/.config/nvim_dev/init.lua'
 
 
 eval $(thefuck --alias fk)
+
+alias :q='exit'
