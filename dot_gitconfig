@@ -4,7 +4,7 @@
 [init]
 	defaultBranch = main
 [core]
-	pager = delta
+	pager = difft
 [interactive]
     diffFilter = delta --color-only
 [delta]
@@ -19,3 +19,4 @@
     conflictstyle = diff3
 [diff]
     colorMoved = default
+    external = difft
